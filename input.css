@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-josefin: "Josefin Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-josefin;
+  }
+
+  body > div {
+    @apply min-h-[100vh];
+  }
+
+  body > div > div {
+    @apply min-h-[96.2vh] lg:min-h-screen;
+  }
+}
+
+@layer components {
+  .webkit-bg-transparent:-webkit-autofill {
+    background-color: transparent !important;
+    color: inherit !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: inherit !important;
+  }
+}
